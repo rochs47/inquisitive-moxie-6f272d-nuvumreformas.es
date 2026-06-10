@@ -92,7 +92,11 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">{t.contact.email}</p>
-                  <p className="text-muted-foreground">info@novum.es</p>
+                 <p className="text-muted-foreground">
+  <a href="mailto:info@novumreformas.es" className="hover:text-foreground transition-colors">
+    info@novumreformas.es
+  </a>
+</p>
                 </div>
               </div>
             </div>
