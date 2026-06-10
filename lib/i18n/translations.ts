@@ -446,7 +446,7 @@ export const translations = {
       paragraphs: [
         "Behind Elecfont AS23 is a family-run, professional team with over 10 years of experience in electrical, plumbing and HVAC installations. Throughout this time, our greatest pride has been the trust and satisfaction of those who choose us day after day.",
         "Precisely because of that trust, and to meet the demand from our clients looking for a complete solution for their homes, we took the big leap: we created NOVUM, our exclusive full-renovation department.",
-        "We have added new professionals and partners to the team who are passionate about detail and construction. This way, we combine the technical expertise and reliability that define Elecfont NOVUM with the freshness, design and full renovation management that NOVUM offers. We take care of your project as if it were our own.",
+        "We have added new professionals and partners to the team who are passionate about detail and construction. This way, we combine the technical expertise and reliability that define Elecfont AS23 with the freshness, design and full renovation management that NOVUM offers. We take care of your project as if it were our own.",
       ],
       highlights: [
         "Over 10 years of experience in installations and renovations",
