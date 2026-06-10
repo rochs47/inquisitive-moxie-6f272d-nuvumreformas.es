@@ -283,7 +283,7 @@ export const translations = {
       eyebrow: "Sobre Nosotros",
       title: "Quiénes Somos",
       paragraphs: [
-        "Detrás de Elecfont NOVUM hay un equipo familiar y profesional con más de 10 años de experiencia en instalaciones de electricidad, fontanería y climatización. Durante todo este tiempo, nuestro mayor orgullo ha sido la confianza y la satisfacción de quienes nos eligen día a día.",
+        "Detrás de Elecfont AS223 hay un equipo familiar y profesional con más de 10 años de experiencia en instalaciones de electricidad, fontanería y climatización. Durante todo este tiempo, nuestro mayor orgullo ha sido la confianza y la satisfacción de quienes nos eligen día a día.",
         "Precisamente por esa confianza, y para dar respuesta a la demanda de nuestros clientes que buscaban una solución completa para sus viviendas, dimos el gran salto: creando NOVUM, nuestro departamento exclusivo de reformas integrales.",
         "Hemos sumado al equipo a nuevos profesionales y colaboradores apasionados por el detalle y la construcción. Así, combinamos la experiencia técnica y la seriedad que nos caracteriza en Elecfont NOVUM con la frescura, el diseño y la gestión integral de reformas que ofrece NOVUM. Cuidamos de tu proyecto como si fuera nuestro.",
       ],
