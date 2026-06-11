@@ -1,0 +1,9 @@
+/* Esto importa la fuente directamente desde Google Fonts para que se vea bien en cualquier ordenador */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.tu-clase-del-menu, h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; /* Hace que se ponga automáticamente en mayúsculas */
+    letter-spacing: 2px;       /* Le da ese espacio elegante entre letras que tiene el logo */
+    font-weight: 500;          /* Ni muy fina ni muy gorda, el equilibrio justo */
+}
