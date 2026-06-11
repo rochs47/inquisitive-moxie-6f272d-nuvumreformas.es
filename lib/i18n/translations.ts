@@ -19,7 +19,7 @@ export const translations = {
       quote: "Pressupost",
     },
     hero: {
-      title: "Transformant espais, creant llars",
+      title: "Creem el nou capítol de la teva llar",
       subtitle:
         "NOVUM: Gestió personalitzada i execució tècnica. Coordinem cada detall de la teva reforma perquè tu només gaudeixis del resultat.",
       ctaPrimary: "Pressupost sense compromís",
@@ -180,7 +180,7 @@ export const translations = {
       quote: "Presupuesto",
     },
     hero: {
-      title: "Transformando espacios creando hogares",
+      title: "Creamos el nuevo capítulo de tu hogar",
       subtitle:
         "NOVUM: Gestión personalizada y ejecución técnica. Coordinamos cada detalle de tu reforma para que tú solo disfrutes del resultado.",
       ctaPrimary: "Presupuesto sin compromiso",
@@ -341,7 +341,7 @@ export const translations = {
       quote: "Get a Quote",
     },
     hero: {
-      title: "We transform spaces, we create homes",
+      title: "We create the new chapter of your home",
       subtitle:
         "NOVUM: Personalized management and technical execution. We coordinate every detail of your renovation so you only enjoy the result.",
       ctaPrimary: "Free quote",
