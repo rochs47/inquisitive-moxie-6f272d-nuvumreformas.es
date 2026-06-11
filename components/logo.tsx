@@ -25,6 +25,12 @@ export function Logo({ className, textClassName, variant = "default" }: LogoProp
         }}
       >
         NOVUM
+        <span className={cn(
+          variant === "default" ? "text-neutral-500" : "text-neutral-300",
+          "ml-1 text-base"
+        )}>
+          23
+        </span>
       </span>
     </div>
   )

@@ -62,7 +62,8 @@ export function Footer() {
         <div className="mt-16 pt-8 border-t border-background/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-background/50 text-sm">
-              © {new Date().getFullYear()} NOVUM Gestión & Obras. {t.footer.rights}
+              © {new Date().getFullYear()} NOVUM
+              <span className="text-background/30">23</span> Gestión & Obras. {t.footer.rights}
             </p>
             <div className="flex items-center gap-6">
               <Link
