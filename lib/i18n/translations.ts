@@ -124,7 +124,7 @@ export const translations = {
       paragraphs: [
         "Darrere d'Elecfont AS23 hi ha un equip familiar i professional amb més de 10 anys d'experiència en instal·lacions d'electricitat, lampisteria i climatització. Durant tot aquest temps, el nostre major orgull ha estat la confiança i la satisfacció de qui ens tria dia a dia.",
         "Precisament per aquesta confiança, i per donar resposta a la demanda dels nostres clients que buscaven una solució completa per a les seves llars, vam fer el gran salt: vam crear NOVUM, el nostre departament exclusiu de reformes integrals.",
-        "Hem sumat a l'equip nous professionals i col·laboradors apassionats pel detall i la construcció. Així, combinem l'experiència tècnica i la serietat que ens caracteritza a Elecfont amb la transparencia, el disseny i la gestió integral de reformes que ofereix NOVUM. Cuidem el teu projecte com si fos el nostre.",
+        "Hem sumat a l'equip nous professionals i col·laboradors apassionats pel detall i la construcció. Així, combinem l'experiència tècnica i la serietat que ens caracteritza a Elecfont AS23 amb la transparencia, el disseny i la gestió integral de reformes que ofereix NOVUM. Cuidem el teu projecte com si fos el nostre.",
       ],
       highlights: [
         "Més de 10 anys d'experiència en instal·lacions i reformes",
