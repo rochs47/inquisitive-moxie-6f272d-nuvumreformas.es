@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -131,12 +132,28 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Montserrat', system-ui, sans-serif;
   }
   
   html {
     scroll-behavior: smooth;
   }
+
+  .web-logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .site-heading,
+  .site-nav a,
+  .site-nav button {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 600;
+  }
 }
+
 
 /* Scroll reveal animations */
 @keyframes fadeInUp {
