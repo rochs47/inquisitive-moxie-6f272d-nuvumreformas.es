@@ -165,3 +165,8 @@
 .animation-delay-300 {
   animation-delay: 300ms;
 }
+
+.web-logo {
+  height: 50px;
+  width: auto;
+}
