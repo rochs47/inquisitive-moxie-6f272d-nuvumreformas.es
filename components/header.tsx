@@ -120,3 +120,13 @@ export function Header() {
     </header>
   )
 }
+<header>
+  <div class="logo-container">
+    <!-- Aquí es donde se carga tu nuevo logo -->
+    <a href="index.html">
+      <img src="img/logo-novum.png" alt="NOVUM Reformas" class="web-logo">
+    </a>
+  </div>
+  
+  <!-- Aquí irían tus enlaces del menú (Inicio, Servicios, Contacto, etc.) -->
+</header>

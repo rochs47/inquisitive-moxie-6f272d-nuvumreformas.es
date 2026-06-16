@@ -37,11 +37,30 @@ export function ContactSection() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    try {
+      // Envío real de datos a través de FormSubmit hacia tu correo de presupuestos
+      const response = await fetch("https://formsubmit.co/ajax/presupuestos@novumreformas.es", {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setIsSubmitted(true)
+      } else {
+        alert("Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo.")
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      alert("Hubo un problema de conexión. Por favor, inténtelo de nuevo.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -92,11 +111,11 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">{t.contact.email}</p>
-                 <p className="text-muted-foreground">
-  <a href="mailto:info@novumreformas.es" className="hover:text-foreground transition-colors">
-    info@novumreformas.es
-  </a>
-</p>
+                  <p className="text-muted-foreground">
+                    <a href="mailto:presupuestos@novumreformas.es" className="hover:text-foreground transition-colors">
+                      presupuestos@novumreformas.es
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -121,13 +140,16 @@ export function ContactSection() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Configuración oculta para evitar Spam en FormSubmit */}
+                  <input type="hidden" name="_captcha" value="false" />
+                  
                   <div className="space-y-2">
                     <Label htmlFor="nombre" className="text-foreground">
                       {t.contact.form.name}
                     </Label>
                     <Input
                       id="nombre"
-                      name="nombre"
+                      name="Nombre del Cliente"
                       placeholder={t.contact.form.namePlaceholder}
                       required
                       className="bg-background border-border focus:border-primary"
@@ -140,7 +162,7 @@ export function ContactSection() {
                     </Label>
                     <Input
                       id="telefono"
-                      name="telefono"
+                      name="Teléfono"
                       type="tel"
                       placeholder="+34 XXX XXX XXX"
                       required
@@ -154,7 +176,7 @@ export function ContactSection() {
                     </Label>
                     <Input
                       id="email"
-                      name="email"
+                      name="Email de Contacto"
                       type="email"
                       placeholder="tu@email.com"
                       required
@@ -168,7 +190,7 @@ export function ContactSection() {
                     </Label>
                     <Input
                       id="poblacion"
-                      name="poblacion"
+                      name="Población / Localidad"
                       placeholder={t.contact.form.townPlaceholder}
                       required
                       className="bg-background border-border focus:border-primary"
