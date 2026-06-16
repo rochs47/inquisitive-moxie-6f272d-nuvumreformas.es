@@ -140,7 +140,7 @@ export const translations = {
       subtitle:
         "Explica'ns el teu projecte i et prepararem un pressupost personalitzat sense cap compromís.",
       location: "Ubicació",
-      locationValue: "Catalunya i rodalies",
+      locationValue: "Badalona",
       phone: "Telèfon",
       email: "Correu electrònic",
       form: {
@@ -301,7 +301,7 @@ export const translations = {
       subtitle:
         "Cuéntanos tu proyecto y te prepararemos un presupuesto personalizado sin ningún compromiso.",
       location: "Ubicación",
-      locationValue: "Cataluña y alrededores",
+      locationValue: "Badalona",
       phone: "Teléfono",
       email: "Email",
       form: {
@@ -462,7 +462,7 @@ export const translations = {
       subtitle:
         "Tell us about your project and we'll prepare a personalized quote with no commitment.",
       location: "Location",
-      locationValue: "Catalonia and surroundings",
+      locationValue: "Badalona",
       phone: "Phone",
       email: "Email",
       form: {
