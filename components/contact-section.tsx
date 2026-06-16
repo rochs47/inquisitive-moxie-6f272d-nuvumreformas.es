@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
 import { Spinner } from "@/components/ui/spinner"
 import { cn } from "@/lib/utils"
 import { Send, CheckCircle, MapPin, Phone, Mail } from "lucide-react"
@@ -76,13 +77,13 @@ export function ContactSection() {
             isVisible ? "animate-fade-in-up" : "opacity-0"
           )}>
             <span className="text-sm font-medium tracking-wider uppercase text-primary">
-              {t.contact.eyebrow}
+              {t.contact?.eyebrow}
             </span>
             <h2 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
-              {t.contact.title}
+              {t.contact?.title}
             </h2>
             <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
-              {t.contact.subtitle}
+              {t.contact?.subtitle}
             </p>
 
             {/* Contact Info */}
@@ -92,8 +93,8 @@ export function ContactSection() {
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">{t.contact.location}</p>
-                  <p className="text-muted-foreground">{t.contact.locationValue}</p>
+                  <p className="font-medium text-foreground">{t.contact?.location}</p>
+                  <p className="text-muted-foreground">{t.contact?.locationValue}</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -101,7 +102,7 @@ export function ContactSection() {
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">{t.contact.phone}</p>
+                  <p className="font-medium text-foreground">{t.contact?.phone}</p>
                   <p className="text-muted-foreground">+34 647705420</p>
                 </div>
               </div>
@@ -110,7 +111,7 @@ export function ContactSection() {
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">{t.contact.email}</p>
+                  <p className="font-medium text-foreground">{t.contact?.email}</p>
                   <p className="text-muted-foreground">
                     <a href="mailto:presupuestos@novumreformas.es" className="hover:text-foreground transition-colors">
                       presupuestos@novumreformas.es
@@ -132,10 +133,10 @@ export function ContactSection() {
                     <CheckCircle className="w-8 h-8 text-green-600" />
                   </div>
                   <h3 className="font-serif text-2xl font-semibold text-foreground mb-2">
-                    {t.contact.form.successTitle}
+                    {t.contact?.form?.successTitle}
                   </h3>
                   <p className="text-muted-foreground">
-                    {t.contact.form.successText}
+                    {t.contact?.form?.successText}
                   </p>
                 </div>
               ) : (
@@ -145,12 +146,12 @@ export function ContactSection() {
                   
                   <div className="space-y-2">
                     <Label htmlFor="nombre" className="text-foreground">
-                      {t.contact.form.name}
+                      {t.contact?.form?.name || "Nombre"}
                     </Label>
                     <Input
                       id="nombre"
                       name="Nombre del Cliente"
-                      placeholder={t.contact.form.namePlaceholder}
+                      placeholder={t.contact?.form?.namePlaceholder || "Tu nombre completo"}
                       required
                       className="bg-background border-border focus:border-primary"
                     />
@@ -158,7 +159,7 @@ export function ContactSection() {
 
                   <div className="space-y-2">
                     <Label htmlFor="telefono" className="text-foreground">
-                      {t.contact.form.phone}
+                      {t.contact?.form?.phone || "Teléfono"}
                     </Label>
                     <Input
                       id="telefono"
@@ -172,7 +173,7 @@ export function ContactSection() {
 
                   <div className="space-y-2">
                     <Label htmlFor="email" className="text-foreground">
-                      {t.contact.form.email}
+                      {t.contact?.form?.email || "Email"}
                     </Label>
                     <Input
                       id="email"
@@ -186,14 +187,29 @@ export function ContactSection() {
 
                   <div className="space-y-2">
                     <Label htmlFor="poblacion" className="text-foreground">
-                      {t.contact.form.town}
+                      {t.contact?.form?.town || "Población"}
                     </Label>
                     <Input
                       id="poblacion"
                       name="Población / Localidad"
-                      placeholder={t.contact.form.townPlaceholder}
+                      placeholder={t.contact?.form?.townPlaceholder || "Tu ciudad o pueblo"}
                       required
                       className="bg-background border-border focus:border-primary"
+                    />
+                  </div>
+
+                  {/* Nuevo campo para la explicación del proyecto */}
+                  <div className="space-y-2">
+                    <Label htmlFor="mensaje" className="text-foreground">
+                      {t.contact?.form?.message || "Cuéntanos brevemente qué quieres hacer"}
+                    </Label>
+                    <Textarea
+                      id="mensaje"
+                      name="Detalles del Proyecto"
+                      placeholder={t.contact?.form?.messagePlaceholder || "Ej: Quiero hacer la cocina nueva, reformar el WC o cambiar las ventanas..."}
+                      rows={4}
+                      required
+                      className="bg-background border-border focus:border-primary resize-none"
                     />
                   </div>
 
@@ -205,18 +221,18 @@ export function ContactSection() {
                     {isSubmitting ? (
                       <>
                         <Spinner className="mr-2" />
-                        {t.contact.form.submitting}
+                        {t.contact?.form?.submitting || "Enviando..."}
                       </>
                     ) : (
                       <>
-                        {t.contact.form.submit}
+                        {t.contact?.form?.submit || "Solicitar presupuesto"}
                         <Send className="ml-2 h-4 w-4" />
                       </>
                     )}
                   </Button>
 
                   <p className="text-xs text-muted-foreground text-center leading-relaxed">
-                    {t.contact.form.disclaimer}
+                    {t.contact?.form?.disclaimer}
                   </p>
                 </form>
               )}
