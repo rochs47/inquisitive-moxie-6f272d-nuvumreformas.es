@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import { Spinner } from "@/components/ui/spinner"
 import { cn } from "@/lib/utils"
 import { Send, CheckCircle, MapPin, Phone, Mail } from "lucide-react"
@@ -42,7 +41,6 @@ export function ContactSection() {
     const formData = new FormData(form)
 
     try {
-      // Envío real de datos a través de FormSubmit hacia tu correo de presupuestos
       const response = await fetch("https://formsubmit.co/ajax/presupuestos@novumreformas.es", {
         method: "POST",
         body: formData,
@@ -141,7 +139,6 @@ export function ContactSection() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Configuración oculta para evitar Spam en FormSubmit */}
                   <input type="hidden" name="_captcha" value="false" />
                   
                   <div className="space-y-2">
@@ -198,18 +195,18 @@ export function ContactSection() {
                     />
                   </div>
 
-                  {/* Nuevo campo para la explicación del proyecto */}
+                  {/* Cuadro de texto alternativo directo */}
                   <div className="space-y-2">
                     <Label htmlFor="mensaje" className="text-foreground">
                       {t.contact?.form?.message || "Cuéntanos brevemente qué quieres hacer"}
                     </Label>
-                    <Textarea
+                    <textarea
                       id="mensaje"
                       name="Detalles del Proyecto"
                       placeholder={t.contact?.form?.messagePlaceholder || "Ej: Quiero hacer la cocina nueva, reformar el WC o cambiar las ventanas..."}
                       rows={4}
                       required
-                      className="bg-background border-border focus:border-primary resize-none"
+                      className="flex w-full rounded-md border border-border bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 focus:border-primary resize-none text-foreground"
                     />
                   </div>
 
