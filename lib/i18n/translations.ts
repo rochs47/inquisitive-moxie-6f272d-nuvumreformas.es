@@ -180,7 +180,7 @@ export const translations = {
       quote: "Presupuesto",
     },
     hero: {
-      title: "Creamos el nuevo capítulo de tu hogar",
+      title: "Lo nuevo empieza aquí",
       subtitle:
         "NOVUM: Gestión personalizada y ejecución técnica. Coordinamos cada detalle de tu reforma para que tú solo disfrutes del resultado.",
       ctaPrimary: "Presupuesto sin compromiso",
