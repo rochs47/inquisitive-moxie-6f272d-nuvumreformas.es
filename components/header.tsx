@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Logo } from "@/components/logo"
@@ -43,7 +44,14 @@ export function Header() {
       <div className="container mx-auto px-6 lg:px-8">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/images/logo istopo 23 svg.svg"
+              alt="Isotipo"
+              width={40}
+              height={40}
+              className="h-10 w-10"
+            />
             <Logo textClassName="text-2xl" />
           </Link>
 
