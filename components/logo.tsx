@@ -7,15 +7,15 @@ interface LogoProps {
 export function Logo({ className }: LogoProps) {
   return (
     <div className={cn("flex flex-col items-center justify-center select-none", className)}>
-      {/* Tu isotipo */}
+      {/* Isotipo: quitamos el fondo forzando transparencia en el CSS */}
       <img 
         src="/images/logo.svg" 
-        alt="Isotipo Nuvum" 
-        className="w-16 h-16 mb-2" 
+        alt="Nuvum Logo" 
+        className="w-32 h-32 object-contain" 
       />
       
-      {/* Nombre de la marca */}
-      <span className="font-serif font-bold text-2xl tracking-widest text-neutral-900 uppercase">
+      {/* Nombre: usamos Montserrat como pediste */}
+      <span className="font-sans font-bold text-5xl tracking-widest text-neutral-900 uppercase mt-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
         NOVUM
       </span>
     </div>
