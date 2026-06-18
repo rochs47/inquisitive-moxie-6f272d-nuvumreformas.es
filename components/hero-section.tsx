@@ -5,6 +5,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useLanguage } from "@/lib/i18n/language-context"
+// 1. Importamos el componente Logo
+import { Logo } from "@/components/logo"
 
 export function HeroSection() {
   const { t } = useLanguage()
@@ -27,6 +29,12 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-20">
         <div className="max-w-3xl mx-auto text-center">
+          
+          {/* 2. Insertamos el Logo aquí arriba */}
+          <div className="mb-8 flex justify-center animate-fade-in-up">
+            <Logo className="scale-75" /> 
+          </div>
+
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight text-balance animate-fade-in-up">
             {t.hero.title}
           </h1>
