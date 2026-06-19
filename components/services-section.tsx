@@ -5,13 +5,15 @@ import Image from "next/image"
 import { useLanguage } from "@/lib/i18n/language-context"
 import { cn } from "@/lib/utils"
 
+// He añadido service-hvac.png al final
 const serviceImages = [
   "/images/service-electrical.png",
-  "/images/service-plumbing.png",
+  "/images/service-plumbing.png", // Asegúrate de que esta sea técnica
   "/images/service-carpentry.jpg",
   "/images/detail-floor.jpg",
   "/images/service-interiors.jpg",
   "/images/service-masonry.jpg",
+  "/images/service-hvac.png", // Nueva imagen de clima
   "/images/detail-faucet.jpg",
 ]
 
@@ -44,7 +46,6 @@ export function ServicesSection() {
       className="py-24 lg:py-32 bg-secondary/30"
     >
       <div className="container mx-auto px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-sm font-medium tracking-wider uppercase text-primary">
             {t.services.eyebrow}
@@ -57,7 +58,6 @@ export function ServicesSection() {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {t.services.items.map((service, index) => (
             <div
@@ -65,12 +65,11 @@ export function ServicesSection() {
               className={cn(
                 "group relative rounded-xl overflow-hidden cursor-pointer",
                 isVisible ? "animate-fade-in-up" : "opacity-0",
-                index === 1 && "animation-delay-100",
-                index === 2 && "animation-delay-200",
-                index >= 3 && "animation-delay-300"
+                index % 4 === 1 && "animation-delay-100",
+                index % 4 === 2 && "animation-delay-200",
+                index % 4 === 3 && "animation-delay-300"
               )}
             >
-              {/* Image */}
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
                   src={serviceImages[index] || "/placeholder.svg"}
@@ -81,7 +80,6 @@ export function ServicesSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent" />
               </div>
 
-              {/* Content Overlay */}
               <div className="absolute inset-x-0 bottom-0 p-5">
                 <div>
                   <h3 className="font-serif text-xl lg:text-2xl font-semibold text-card mb-1">
