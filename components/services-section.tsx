@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 const serviceImages = [
   "/images/service-electrical.png",
-  "/images/service-plumbing.png",
+  "/images/service-hvac.svg",
   "/images/service-carpentry.jpg",
   "/images/detail-floor.jpg",
   "/images/service-interiors.jpg",
