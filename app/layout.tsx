@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { DM_Sans, DM_Serif_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { LanguageProvider } from '@/lib/i18n/language-context'
+import { Header } from '@/components/header' // Importamos el Header aquí
 import './globals.css'
 
 const dmSans = DM_Sans({
@@ -18,13 +19,9 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'NOVUM | Gestión & Obras - Reformas Integrales con Garantía Técnica',
-  description: 'NOVUM: Gestión personalizada y ejecución técnica. Coordinamos cada detalle de tu reforma integral en Cataluña para que tú no tengas que preocuparte de nada.',
-  keywords: ['reformas integrales', 'obras', 'construcción', 'arquitectura', 'ingeniería', 'Cataluña', 'NOVUM', 'Elecfont'],
-  icons: {
-    icon: '/icon.svg',
-    apple: '/apple-icon.png',
-  },
+  title: 'NOVUM | Gestión & Obras',
+  description: 'Reformas integrales.',
+  icons: { icon: '/icon.svg' },
 }
 
 export const viewport: Viewport = {
@@ -42,6 +39,7 @@ export default function RootLayout({
     <html lang="ca" className="bg-background">
       <body className={`${dmSans.variable} ${dmSerif.variable} font-sans antialiased`}>
         <LanguageProvider>
+          <Header /> {/* Al ponerlo aquí, aparecerá en todas las páginas */}
           {children}
         </LanguageProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
