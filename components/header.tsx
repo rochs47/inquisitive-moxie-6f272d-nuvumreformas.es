@@ -15,12 +15,13 @@ const navItems = [
 export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md shadow-sm border-b">
-      <div className="container mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
-        
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          <Logo className="h-10 w-10" />
-        </Link>
+      <div className="container mx-auto px-6 lg:px-8 flex items-center justify-between h-20 relative">
+        {/* Logo centrado en el header (isótopo solo) */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <Link href="/" className="pointer-events-auto">
+            <Logo className="h-10 w-10" />
+          </Link>
+        </div>
 
         {/* Navegación Desktop */}
         <nav className="hidden lg:flex items-center gap-7">

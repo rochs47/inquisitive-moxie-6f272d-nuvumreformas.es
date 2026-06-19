@@ -31,8 +31,13 @@ export function HeroSection() {
 
         {/* Quitamos el h1 de NOVUM para que no duplique el logo */}
 
+        {/* Título pequeño bajo el logo */}
+        <h1 className="mt-4 text-2xl sm:text-3xl font-semibold text-foreground max-w-2xl mx-auto animate-fade-in-up animation-delay-50">
+          {t.hero.title}
+        </h1>
+
         {/* Eslogan */}
-        <p className="mt-6 text-xl sm:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-100">
+        <p className="mt-4 text-xl sm:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-100">
           {t.hero.subtitle}
         </p>
 
