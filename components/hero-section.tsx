@@ -30,14 +30,13 @@ export function HeroSection() {
         <div className="max-w-3xl mx-auto text-center">
           
           {/* Logo Agrandado */}
-          <div className="mb-10 flex justify-center animate-fade-in-up">
-            <Logo className="scale-125" /> 
+          <div className="mb-8 flex justify-center animate-fade-in-up">
+            <Logo className="scale-[2.0]" /> 
           </div>
 
-          {/* El <h1> ha sido eliminado para dar protagonismo al logo */}
+          {/* H1 eliminado para quitar el texto grande */}
 
-          {/* Eslogan reducido para mayor elegancia */}
-          <p className="mt-2 text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed text-pretty animate-fade-in-up animation-delay-100">
+          <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed text-pretty animate-fade-in-up animation-delay-100">
             {t.hero.subtitle}
           </p>
 
@@ -52,13 +51,6 @@ export function HeroSection() {
               <Link href="#metodo">{t.hero.ctaSecondary}</Link>
             </Button>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-foreground/30 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-foreground/50 rounded-full" />
         </div>
       </div>
     </section>
