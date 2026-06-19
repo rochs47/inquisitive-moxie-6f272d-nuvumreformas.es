@@ -1,23 +1,29 @@
-import { cn } from "@/lib/utils"
+import Image from "next/image"
 
-interface LogoProps {
-  className?: string
-}
-
-export function Logo({ className }: LogoProps) {
+export function Logo({ 
+  className, 
+  variant = "full" // "full" muestra isotipo + nombre, "icon" solo isotipo
+}: { 
+  className?: string, 
+  variant?: "full" | "icon" 
+}) {
   return (
-    <div className={cn("flex flex-col items-center justify-center select-none", className)}>
-      <img 
-        src="/images/logo.svg" 
-        alt="Nuvum Logo" 
-        className="w-40 h-40 object-contain mix-blend-multiply" 
+    <div className={`flex flex-col items-center gap-2 ${className}`}>
+      {/* El Isotipo */}
+      <Image 
+        src="/images/logo istopo 23 svg.svg" 
+        alt="Novum Logo" 
+        width={40} 
+        height={40} 
+        className="w-full h-auto"
       />
-      <span 
-        className="font-bold text-5xl tracking-widest text-neutral-900 uppercase mt-4" 
-        style={{ fontFamily: 'Montserrat, sans-serif' }}
-      >
-        NOVUM
-      </span>
+      
+      {/* El nombre NOVUM (solo aparece si variant es 'full') */}
+      {variant === "full" && (
+        <span className="font-serif text-lg tracking-widest uppercase">
+          NOVUM
+        </span>
+      )}
     </div>
   )
 }
