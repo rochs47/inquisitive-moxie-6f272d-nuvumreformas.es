@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import { Logo } from "@/components/logo"
 import { useLanguage } from "@/lib/i18n/language-context"
 
 export function Footer() {
@@ -22,9 +21,6 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-block">
-              <Logo variant="light" textClassName="text-3xl" />
-            </Link>
             <p className="mt-4 text-background/70 leading-relaxed">
               {t.footer.tagline}
             </p>

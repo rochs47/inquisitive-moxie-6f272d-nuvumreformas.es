@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useLanguage } from "@/lib/i18n/language-context"
-import { Logo } from "@/components/logo"
+// Logo removed — no longer used in hero
 
 export function HeroSection() {
   const { t } = useLanguage()
