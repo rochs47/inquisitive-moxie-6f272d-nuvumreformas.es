@@ -2,13 +2,12 @@
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
-import { ArrowUpRight } from "lucide-react"
 import { useLanguage } from "@/lib/i18n/language-context"
 import { cn } from "@/lib/utils"
 
 const serviceImages = [
   "/images/service-electrical.png",
-  "/images/service-hvac.svg",
+  "/images/service-plumbing.png",
   "/images/service-carpentry.jpg",
   "/images/detail-floor.jpg",
   "/images/service-interiors.jpg",
@@ -84,18 +83,13 @@ export function ServicesSection() {
 
               {/* Content Overlay */}
               <div className="absolute inset-x-0 bottom-0 p-5">
-                <div className="flex items-end justify-between gap-3">
-                  <div>
-                    <h3 className="font-serif text-xl lg:text-2xl font-semibold text-card mb-1">
-                      {service.title}
-                    </h3>
-                    <p className="text-card/80 text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-                  <div className="flex-shrink-0 w-9 h-9 rounded-full bg-card/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
-                    <ArrowUpRight className="w-4 h-4 text-card transition-transform duration-300 group-hover:rotate-45" />
-                  </div>
+                <div>
+                  <h3 className="font-serif text-xl lg:text-2xl font-semibold text-card mb-1">
+                    {service.title}
+                  </h3>
+                  <p className="text-card/80 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             </div>
