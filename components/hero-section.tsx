@@ -27,10 +27,7 @@ export function HeroSection() {
       {/* Contenido centrado */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         
-        {/* Logo agrandado */}
-        <div className="mb-8 flex justify-center animate-fade-in-up">
-          <Logo className="scale-[2.5]" /> 
-        </div>
+        {/* Logo eliminado del hero para que no muestre 'NOVUM' en grande */}
 
         {/* Quitamos el h1 de NOVUM para que no duplique el logo */}
 
