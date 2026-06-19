@@ -5,16 +5,15 @@ import Image from "next/image"
 import { useLanguage } from "@/lib/i18n/language-context"
 import { cn } from "@/lib/utils"
 
-// He añadido service-hvac.png al final
 const serviceImages = [
-  "/images/service-electrical.png",
-  "/images/service-plumbing.png", // Asegúrate de que esta sea técnica
-  "/images/service-carpentry.jpg",
-  "/images/detail-floor.jpg",
-  "/images/service-interiors.jpg",
-  "/images/service-masonry.jpg",
-  "/images/service-hvac.png", // Nueva imagen de clima
-  "/images/detail-faucet.jpg",
+  "/images/service-electrical.png",  // 1. Electricidad
+  "/images/service-plumbing.png",    // 2. Fontanería
+  "/images/service-carpentry.jpg",   // 3. Carpintería
+  "/images/detail-floor.jpg",        // 4. Suelos
+  "/images/service-interiors.jpg",   // 5. Interiores
+  "/images/service-masonry.jpg",     // 6. Albañilería
+  "/images/service-hvac.png",        // 7. Clima
+  "/images/service-cleaning.jpg",    // 8. Limpieza
 ]
 
 export function ServicesSection() {
@@ -25,37 +24,25 @@ export function ServicesSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
+        if (entry.isIntersecting) setIsVisible(true)
       },
       { threshold: 0.1 }
     )
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current)
     return () => observer.disconnect()
   }, [])
 
   return (
-    <section
-      ref={sectionRef}
-      id="servicios"
-      className="py-24 lg:py-32 bg-secondary/30"
-    >
+    <section ref={sectionRef} id="servicios" className="py-24 lg:py-32 bg-secondary/30">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-sm font-medium tracking-wider uppercase text-primary">
             {t.services.eyebrow}
           </span>
-          <h2 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
+          <h2 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
             {t.services.title}
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
-            {t.services.subtitle}
-          </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -64,10 +51,7 @@ export function ServicesSection() {
               key={service.title}
               className={cn(
                 "group relative rounded-xl overflow-hidden cursor-pointer",
-                isVisible ? "animate-fade-in-up" : "opacity-0",
-                index % 4 === 1 && "animation-delay-100",
-                index % 4 === 2 && "animation-delay-200",
-                index % 4 === 3 && "animation-delay-300"
+                isVisible ? "animate-fade-in-up" : "opacity-0"
               )}
             >
               <div className="relative aspect-[3/4] overflow-hidden">
@@ -81,14 +65,12 @@ export function ServicesSection() {
               </div>
 
               <div className="absolute inset-x-0 bottom-0 p-5">
-                <div>
-                  <h3 className="font-serif text-xl lg:text-2xl font-semibold text-card mb-1">
-                    {service.title}
-                  </h3>
-                  <p className="text-card/80 text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
+                <h3 className="font-serif text-xl lg:text-2xl font-semibold text-card mb-1">
+                  {service.title}
+                </h3>
+                <p className="text-card/80 text-sm leading-relaxed">
+                  {service.description}
+                </p>
               </div>
             </div>
           ))}
