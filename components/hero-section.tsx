@@ -29,15 +29,15 @@ export function HeroSection() {
       <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-20">
         <div className="max-w-3xl mx-auto text-center">
           
-          <div className="mb-8 flex justify-center animate-fade-in-up">
-            <Logo className="scale-75" /> 
+          {/* Logo Agrandado */}
+          <div className="mb-10 flex justify-center animate-fade-in-up">
+            <Logo className="scale-125" /> 
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight text-balance animate-fade-in-up">
-            {t.hero.title}
-          </h1>
+          {/* El <h1> ha sido eliminado para dar protagonismo al logo */}
 
-          <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-pretty animate-fade-in-up animation-delay-100">
+          {/* Eslogan reducido para mayor elegancia */}
+          <p className="mt-2 text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed text-pretty animate-fade-in-up animation-delay-100">
             {t.hero.subtitle}
           </p>
 
