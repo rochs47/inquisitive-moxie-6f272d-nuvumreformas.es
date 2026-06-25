@@ -5,15 +5,43 @@ import Image from "next/image"
 import { useLanguage } from "@/lib/i18n/language-context"
 import { cn } from "@/lib/utils"
 
-const serviceImages = [
-  "/images/service-electrical.png",  // 1. Electricidad
-  "/images/service-plumbing.png",    // 2. Fontanería
-  "/images/service-carpentry.jpg",   // 3. Carpintería
-  "/images/detail-floor.jpg",        // 4. Suelos
-  "/images/service-interiors.jpg",   // 5. Interiores
-  "/images/service-masonry.jpg",     // 6. Albañilería
-  "/images/service-hvac.png",        // 7. Clima
-  "/images/service-cleaning.jpg",    // 8. Limpieza
+// Asegúrate de que este orden sea el mismo que quieres en la web
+const servicesData = [
+  { 
+    title: "Electricidad", 
+    description: "Instalaciones eléctricas completas y certificadas.", 
+    image: "/images/service-electrical.png" 
+  },
+  { 
+    title: "Fontanería", 
+    description: "Instalaciones de agua y saneamiento.", // Aquí ya he quitado lo de "clima"
+    image: "/images/service-plumbing.png" 
+  },
+  { 
+    title: "Carpintería", 
+    description: "Muebles a medida y carpintería de alta calidad.", 
+    image: "/images/service-carpentry.jpg" 
+  },
+  { 
+    title: "Suelos", 
+    description: "Instalación y reparación de suelos.", 
+    image: "/images/detail-floor.jpg" 
+  },
+  { 
+    title: "Interiores", 
+    description: "Diseño y reforma de interiores.", 
+    image: "/images/service-interiors.jpg" 
+  },
+  { 
+    title: "Albañilería", 
+    description: "Trabajamos con profesionales.", 
+    image: "/images/service-masonry.jpg" 
+  },
+  { 
+    title: "Limpieza", 
+    description: "Limpieza profesional de fin de obra.", 
+    image: "/images/service-cleaning.jpg" // Asegúrate de que esta imagen sea la correcta
+  },
 ]
 
 export function ServicesSection() {
@@ -56,7 +84,7 @@ export function ServicesSection() {
             >
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
-                  src={serviceImages[index] || "/placeholder.svg"}
+                  src={service.image}
                   alt={service.title}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"

@@ -83,7 +83,7 @@ export const translations = {
             "Els honoraris tècnics es pressuposten per separat, sense sorpreses ni costos ocults.",
         },
       ],
-      stat: "Projectes amb supervisió tècnica professional",
+      stat: "Projectes with professional technical supervision",
     },
     projects: {
       eyebrow: "Tipus de Projecte",
@@ -218,7 +218,7 @@ export const translations = {
         { title: "Fontanería", description: "Instalaciones de agua, saneamiento.", image: "/images/service-plumbing.png" },
         { title: "Aluminio", description: "Ventanas, puertas y cerramientos de aluminio de alta calidad.", image: "/images/service-aluminium.jpg" },
         { title: "Carpintería", description: "Muebles a medida, armarios y carpintería de interior.", image: "/images/service-carpentry.jpg" },
-        { title: "Cocinas", description: "Diseño e instalación de cocinas completas.", image: "/images/service-interiors.jpg" },
+        { title: "Cocinas", description: "Diseño e instalación de cocinas completas.", image: "/images/service-kitchens.jpg" },
         { title: "Albañilería", description: "Trabajamos con profesionales experimentados en el sector.", image: "/images/service-masonry.jpg" },
         { title: "Limpieza", description: "Limpieza profesional de fin de obra incluida.", image: "/images/service-cleaning.jpg" },
       ],
@@ -283,7 +283,7 @@ export const translations = {
       eyebrow: "Sobre Nosotros",
       title: "Quiénes Somos",
       paragraphs: [
-        "Detrás de Elecfont AS223 hay un equipo familiar y profesional con más de 10 años de experiencia en instalaciones de electricidad, fontanería y climatización. Durante todo este tiempo, nuestro mayor orgullo ha sido la confianza y la satisfacción de quienes nos eligen día a día.",
+        "Detrás de Elecfont AS223 hay un equipo familiar y profesional con más de 10 años de experiencia en instalaciones de electricidad, fontanería y climatización. Durante todo este tiempo, nuestro mayor orgullo ha sido la la confianza y la satisfacción de quienes nos eligen día a día.",
         "Precisamente por esa confianza, y para dar respuesta a la demanda de nuestros clientes que buscaban una solución completa para sus viviendas, dimos el gran salto: creando NOVUM, nuestro departamento exclusivo de reformas integrales.",
         "Hemos sumado al equipo a nuevos profesionales y colaboradores apasionados por el detalle y la construcción. Así, combinamos la experiencia técnica y la seriedad que nos caracteriza en Elecfont AS23 con la frescura, el diseño y la gestión integral de reformas que ofrece NOVUM. Cuidamos de tu proyecto como si fuera nuestro.",
       ],
@@ -375,8 +375,7 @@ export const translations = {
       eyebrow: "Specialties",
       title: "Our Services",
       subtitle: "Comprehensive solutions for every aspect of your renovation.",
-      
-    },items: [
+      items: [
         { title: "Electrical", description: "Complete, certified electrical installations.", image: "/images/service-electrical.png" },
         { title: "Plumbing", description: "Water, drainage installations.", image: "/images/service-plumbing.png" },
         { title: "Aluminium", description: "High-quality aluminium windows, doors and enclosures.", image: "/images/service-aluminium.jpg" },
@@ -385,6 +384,7 @@ export const translations = {
         { title: "Masonry", description: "We work with experienced professionals in the sector.", image: "/images/service-masonry.jpg" },
         { title: "Cleaning", description: "Professional end-of-construction cleaning included.", image: "/images/service-cleaning.jpg" },
       ],
+    },
     technicalOffice: {
       eyebrow: "Professional Backing",
       title: "Technical Office",
