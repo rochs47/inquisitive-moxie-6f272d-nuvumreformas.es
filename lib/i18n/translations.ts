@@ -218,7 +218,7 @@ export const translations = {
         { title: "Fontanería", description: "Instalaciones de agua, saneamiento.", image: "/images/service-plumbing.png" },
         { title: "Aluminio", description: "Ventanas, puertas y cerramientos de aluminio de alta calidad.", image: "/images/service-aluminium.jpg" },
         { title: "Carpintería", description: "Muebles a medida, armarios y carpintería de interior.", image: "/images/service-carpentry.jpg" },
-        { title: "Cocinas", description: "Diseño e instalación de cocinas completas.", image: "/images/service-kitchens.jpg" },
+        { title: "Cocinas", description: "Diseño e instalación de cocinas completas.", image: "/images/service-interiors.jpg" },
         { title: "Albañilería", description: "Trabajamos con profesionales experimentados en el sector.", image: "/images/service-masonry.jpg" },
         { title: "Limpieza", description: "Limpieza profesional de fin de obra incluida.", image: "/images/service-cleaning.jpg" },
       ],
