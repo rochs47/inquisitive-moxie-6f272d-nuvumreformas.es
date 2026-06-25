@@ -53,7 +53,7 @@ export const translations = {
       subtitle: "Solucions integrals per a cada aspecte de la teva reforma.",
       items: [
         { title: "Electricitat", description: "Instal·lacions elèctriques completes i certificades." },
-        { title: "Lampisteria", description: "Instal·lacions d'aigua, sanejament i climatització." },
+        { title: "Lampisteria", description: "Instal·lacions d'aigua, sanejament." },
         { title: "Alumini", description: "Finestres, portes i tancaments d'alumini d'alta qualitat." },
         { title: "Fusteria", description: "Mobles a mida, armaris i fusteria d'interior." },
         { title: "Cuines", description: "Disseny i instal·lació de cuines completes." },
@@ -377,7 +377,7 @@ export const translations = {
       subtitle: "Comprehensive solutions for every aspect of your renovation.",
       items: [
         { title: "Electrical", description: "Complete, certified electrical installations." },
-        { title: "Plumbing", description: "Water, drainage and HVAC installations." },
+        { title: "Plumbing", description: "Water, drainage installations." },
         { title: "Aluminium", description: "High-quality aluminium windows, doors and enclosures." },
         { title: "Carpentry", description: "Custom furniture, wardrobes and interior carpentry." },
         { title: "Kitchens", description: "Design and installation of complete kitchens." },
