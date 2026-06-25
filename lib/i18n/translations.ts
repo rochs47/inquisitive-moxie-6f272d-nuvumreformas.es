@@ -215,7 +215,7 @@ export const translations = {
       subtitle: "Soluciones integrales para cada aspecto de tu reforma.",
       items: [
         { title: "Electricidad", description: "Instalaciones eléctricas completas y certificadas." },
-        { title: "Fontanería", description: "Instalaciones de agua, saneamiento y climatización." },
+        { title: "Fontanería", description: "Instalaciones de agua, saneamiento." },
         { title: "Aluminio", description: "Ventanas, puertas y cerramientos de aluminio de alta calidad." },
         { title: "Carpintería", description: "Muebles a medida, armarios y carpintería de interior." },
         { title: "Cocinas", description: "Diseño e instalación de cocinas completas." },
