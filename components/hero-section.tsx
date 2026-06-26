@@ -26,8 +26,8 @@ export function HeroSection() {
       {/* Contenido principal */}
       <div className="relative z-10 w-full px-6 text-center">
         
-        {/* Logo con posicionamiento absoluto para asegurar centrado total */}
-        <div className="flex justify-center w-full mb-8 animate-fade-in-up">
+        {/* Contenedor del logo con margen superior (mt-12) para separarlo del menú */}
+        <div className="mt-12 mb-8 w-full flex justify-center animate-fade-in-up">
           <Image
             src="/images/logo.svg"
             alt="Logo Novum"
@@ -38,7 +38,7 @@ export function HeroSection() {
           />
         </div>
 
-        {/* Contenedor del texto (dentro del container para mantener el ancho legible) */}
+        {/* Contenedor de texto e info */}
         <div className="container mx-auto">
             <h1 className="mt-4 text-2xl sm:text-3xl font-semibold text-foreground max-w-2xl mx-auto animate-fade-in-up animation-delay-50">
               {t.hero.title}
@@ -48,6 +48,7 @@ export function HeroSection() {
               {t.hero.subtitle}
             </p>
 
+            {/* Botones */}
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-200">
               <Button asChild size="lg" className="rounded-lg px-8 py-6">
                 <Link href="#contacto">
