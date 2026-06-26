@@ -249,7 +249,29 @@ export const translations = {
       ],
       stat: "Proyectos con supervisión técnica profesional",
     },
-    
+    projects: {
+      eyebrow: "Tipo de Proyecto",
+      title: "Reformas para Cada Espacio",
+      subtitle: "Soluciones adaptadas al tamaño de tu vivienda. Consúltanos para más detalles y precios.",
+      items: [
+        {
+          size: "50 m²",
+          title: "Piso 50 m²",
+          description: "Reforma integral ideal para pisos pequeños y estudios. Pronto añadiremos detalles y precios.",
+        },
+        {
+          size: "80 m²",
+          title: "Piso 80 m²",
+          description: "Reforma completa para viviendas medianas. Pronto añadiremos detalles y precios.",
+        },
+        {
+          size: "100 m²",
+          title: "Piso 100 m²",
+          description: "Reforma integral para viviendas amplias. Pronto añadiremos detalles y precios.",
+        },
+      ],
+      cta: "Pedir información",
+    },
     gallery: {
       eyebrow: "Nuestros Trabajos",
       title: "Antes y Después",
