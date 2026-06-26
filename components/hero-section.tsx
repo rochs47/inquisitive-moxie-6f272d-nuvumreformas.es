@@ -26,14 +26,14 @@ export function HeroSection() {
       {/* Contenido centrado */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         
-        {/* Logo encima del título */}
+        {/* Logo aumentado para más presencia */}
         <div className="mb-8 animate-fade-in-up">
           <Image
             src="/images/logo.svg"
             alt="Logo Novum"
-            width={240}
-            height={90}
-            className="mx-auto w-auto h-auto max-h-[100px]"
+            width={400} // Aumentado de 240 a 400
+            height={150} // Aumentado de 90 a 150
+            className="mx-auto w-auto h-auto max-h-[160px]" // Aumentado max-h de 100px a 160px
             priority
           />
         </div>
