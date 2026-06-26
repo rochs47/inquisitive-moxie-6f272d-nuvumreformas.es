@@ -23,42 +23,42 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/80" />
       </div>
 
-      {/* Contenido centrado */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
+      {/* Contenido principal */}
+      <div className="relative z-10 w-full px-6 text-center">
         
-        {/* Contenedor del logo: Ancho total y centrado estricto */}
-        <div className="mb-8 w-full flex justify-center items-center animate-fade-in-up">
+        {/* Logo con posicionamiento absoluto para asegurar centrado total */}
+        <div className="flex justify-center w-full mb-8 animate-fade-in-up">
           <Image
             src="/images/logo.svg"
             alt="Logo Novum"
-            width={600} // Aumentado para mayor nitidez
+            width={600}
             height={250}
-            className="w-auto h-auto max-h-[280px] object-contain" // Tamaño visual incrementado
+            className="w-auto h-auto max-h-[280px] object-contain"
             priority
           />
         </div>
 
-        {/* Título */}
-        <h1 className="mt-4 text-2xl sm:text-3xl font-semibold text-foreground max-w-2xl mx-auto animate-fade-in-up animation-delay-50">
-          {t.hero.title}
-        </h1>
+        {/* Contenedor del texto (dentro del container para mantener el ancho legible) */}
+        <div className="container mx-auto">
+            <h1 className="mt-4 text-2xl sm:text-3xl font-semibold text-foreground max-w-2xl mx-auto animate-fade-in-up animation-delay-50">
+              {t.hero.title}
+            </h1>
 
-        {/* Eslogan */}
-        <p className="mt-4 text-xl sm:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-100">
-          {t.hero.subtitle}
-        </p>
+            <p className="mt-4 text-xl sm:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-100">
+              {t.hero.subtitle}
+            </p>
 
-        {/* Botones */}
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-200">
-          <Button asChild size="lg" className="rounded-lg px-8 py-6">
-            <Link href="#contacto">
-              {t.hero.ctaPrimary}
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="rounded-lg px-8 py-6">
-            <Link href="#metodo">{t.hero.ctaSecondary}</Link>
-          </Button>
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-200">
+              <Button asChild size="lg" className="rounded-lg px-8 py-6">
+                <Link href="#contacto">
+                  {t.hero.ctaPrimary}
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-lg px-8 py-6">
+                <Link href="#metodo">{t.hero.ctaSecondary}</Link>
+              </Button>
+            </div>
         </div>
       </div>
     </section>
