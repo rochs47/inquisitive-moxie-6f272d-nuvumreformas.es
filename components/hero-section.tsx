@@ -5,7 +5,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useLanguage } from "@/lib/i18n/language-context"
-// Logo removed — no longer used in hero
 
 export function HeroSection() {
   const { t } = useLanguage()
@@ -27,9 +26,17 @@ export function HeroSection() {
       {/* Contenido centrado */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         
-        {/* Logo eliminado del hero para que no muestre 'NOVUM' en grande */}
-
-        {/* Quitamos el h1 de NOVUM para que no duplique el logo */}
+        {/* Logo encima del título */}
+        <div className="mb-8 animate-fade-in-up">
+          <Image
+            src="/images/logo.svg"
+            alt="Logo Novum"
+            width={240}
+            height={90}
+            className="mx-auto w-auto h-auto max-h-[100px]"
+            priority
+          />
+        </div>
 
         {/* Título pequeño bajo el logo */}
         <h1 className="mt-4 text-2xl sm:text-3xl font-semibold text-foreground max-w-2xl mx-auto animate-fade-in-up animation-delay-50">
