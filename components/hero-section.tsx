@@ -26,14 +26,14 @@ export function HeroSection() {
       {/* Contenido centrado */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         
-        {/* Contenedor del logo con centrado absoluto */}
-        <div className="mb-8 flex flex-col items-center justify-center animate-fade-in-up">
+        {/* Contenedor del logo: Ancho total y centrado estricto */}
+        <div className="mb-8 w-full flex justify-center items-center animate-fade-in-up">
           <Image
             src="/images/logo.svg"
             alt="Logo Novum"
-            width={500}
-            height={200}
-            className="w-auto h-auto max-h-[220px] object-contain"
+            width={600} // Aumentado para mayor nitidez
+            height={250}
+            className="w-auto h-auto max-h-[280px] object-contain" // Tamaño visual incrementado
             priority
           />
         </div>
