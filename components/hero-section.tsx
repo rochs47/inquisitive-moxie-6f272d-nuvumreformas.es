@@ -26,9 +26,19 @@ export function HeroSection() {
       {/* Contenido centrado */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         
-        
+        {/* Contenedor del logo con centrado absoluto */}
+        <div className="mb-8 flex flex-col items-center justify-center animate-fade-in-up">
+          <Image
+            src="/images/logo.svg"
+            alt="Logo Novum"
+            width={500}
+            height={200}
+            className="w-auto h-auto max-h-[220px] object-contain"
+            priority
+          />
+        </div>
 
-        {/* Título pequeño bajo el logo */}
+        {/* Título */}
         <h1 className="mt-4 text-2xl sm:text-3xl font-semibold text-foreground max-w-2xl mx-auto animate-fade-in-up animation-delay-50">
           {t.hero.title}
         </h1>
