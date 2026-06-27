@@ -18,7 +18,7 @@ export const translations = {
       quote: "Pressupost",
     },
     hero: {
-      title: ,
+      title:"",
       subtitle:
         "NOVUM: Gestió personalitzada i execució tècnica. Coordinem cada detall de la teva reforma perquè tu només gaudeixis del resultat.",
       ctaPrimary: "Pressupost sense compromís",
