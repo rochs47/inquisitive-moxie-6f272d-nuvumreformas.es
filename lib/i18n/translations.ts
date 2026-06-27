@@ -18,7 +18,7 @@ export const translations = {
       quote: "Pressupost",
     },
     hero: {
-      title: "AQUÍ COMENÇA EL NOU",
+      title: ,
       subtitle:
         "NOVUM: Gestió personalitzada i execució tècnica. Coordinem cada detall de la teva reforma perquè tu només gaudeixis del resultat.",
       ctaPrimary: "Pressupost sense compromís",
@@ -181,7 +181,7 @@ export const translations = {
       quote: "Presupuesto",
     },
     hero: {
-      title: "AQUÍ EMPIEZA LO NUEVO",
+      title: "",
       subtitle:
         "NOVUM: Gestión personalizada y ejecución técnica. Coordinamos cada detalle de tu reforma para que tú solo disfrutes del resultado.",
       ctaPrimary: "Presupuesto sin compromiso",
@@ -344,7 +344,7 @@ export const translations = {
       quote: "Get a Quote",
     },
     hero: {
-      title: "HERE BEGINS THE NEW",
+      title: "",
       subtitle:
         "NOVUM: Personalized management and technical execution. We coordinate every detail of your renovation so you only enjoy the result.",
       ctaPrimary: "Free quote",
