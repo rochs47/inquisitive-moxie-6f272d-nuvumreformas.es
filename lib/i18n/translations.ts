@@ -52,7 +52,7 @@ export const translations = {
       title: "Els Nostres Serveis",
       subtitle: "Solucions integrals per a cada aspecte de la teva reforma.",
       items: [
-        { title: "Pladur", description: "Solucions a pladur per als teus espais.", image: "/images/treballs pladur.png" },
+        { title: "Pladur", description: "Solucions a pladur per als teus espais.", image: "/images/trabajos pladur.png" },
         { title: "Electricitat", description: "Instal·lacions elèctriques completes i certificades.", image: "/images/service-electrical.png" },
         { title: "Lampisteria", description: "Instal·lacions d'aigua, sanejament.", image: "/images/service-plumbing.png" },
         { title: "Alumini", description: "Finestres, portes i tancaments d'alumini.", image: "/images/service-aluminium.jpg" },
