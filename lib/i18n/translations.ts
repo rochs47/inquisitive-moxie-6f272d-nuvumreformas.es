@@ -215,6 +215,7 @@ export const translations = {
       title: "Nuestros Servicios",
       subtitle: "Soluciones integrales para cada aspecto de tu reforma.",
       items: [
+        { title: "Pladur", description: "Soluciones en pladur para tus espacios.", image: "/images/trabajos pladur.png" },
         { title: "Electricidad", description: "Instalaciones eléctricas completas y certificadas.", image: "/images/service-electrical.png" },
         { title: "Fontanería", description: "Instalaciones de agua, saneamiento.", image: "/images/service-plumbing.png" },
         { title: "Aluminio", description: "Ventanas, puertas y cerramientos de aluminio de alta calidad.", image: "/images/service-aluminium.jpg" },
