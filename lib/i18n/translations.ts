@@ -60,7 +60,7 @@ export const translations = {
         { title: "Cuines", description: "Disseny i instal·lació de cuines completes.", image: "/images/service-interiors.jpg" },
         { title: "Paleta", description: "Treballem amb professionals experimentats del sector.", image: "/images/service-masonry.jpg" },
         { title: "Climatització", description: "Instal·lacions de clima.", image: "/images/service-hvac.png" },
-        { title: "Neteja", description: "Neteja professional de fi d'obra inclosa.", image: "/images/service-cleaning.jpg" },
+        { title: "Neteja", description: "Neteja professional de fi d'obra inclosa.", image: "/images/service-cleaning..jpg" },
       ],
     },
     technicalOffice: {
@@ -224,7 +224,7 @@ export const translations = {
         { title: "Cocinas", description: "Diseño e instalación de cocinas completas.", image: "/images/service-interiors.jpg" },
         { title: "Albañilería", description: "Trabajamos con profesionales experimentados en el sector.", image: "/images/service-masonry.jpg" },
         { title: "Climatización", description: "Instalaciones de clima.", image: "/images/service-hvac.png" },
-        { title: "Limpieza", description: "Limpieza profesional de fin de obra incluida.", image: "/images/service-cleaning.jpg" },
+        { title: "Limpieza", description: "Limpieza profesional de fin de obra incluida.", image: "/images/service-cleaning..jpg" },
       ],
     },
     technicalOffice: {
@@ -388,7 +388,7 @@ export const translations = {
         { title: "Kitchens", description: "Design and installation of complete kitchens.", image: "/images/service-interiors.jpg" },
         { title: "Masonry", description: "We work with experienced professionals in the sector.", image: "/images/service-masonry.jpg" },
         { title: "Air Conditioning", description: "HVAC systems.", image: "/images/service-hvac.png" },
-        { title: "Cleaning", description: "Professional end-of-construction cleaning included.", image: "/images/service-cleaning.jpg" },
+        { title: "Cleaning", description: "Professional end-of-construction cleaning included.", image: "/images/service-cleaning..jpg" },
       ],
     },
     technicalOffice: {
