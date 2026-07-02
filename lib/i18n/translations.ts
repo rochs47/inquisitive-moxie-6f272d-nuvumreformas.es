@@ -379,6 +379,7 @@ export const translations = {
       title: "Our Services",
       subtitle: "Comprehensive solutions for every aspect of your renovation.",
       items: [
+        { title: "Drywall", description: "Drywall solutions for your spaces.", image: "/images/trabajos pladur.png" },
         { title: "Electrical", description: "Complete, certified electrical installations.", image: "/images/service-electrical.png" },
         { title: "Plumbing", description: "Water, drainage installations.", image: "/images/service-plumbing.png" },
         { title: "Aluminium", description: "High-quality aluminium windows, doors and enclosures.", image: "/images/service-aluminium.jpg" },
