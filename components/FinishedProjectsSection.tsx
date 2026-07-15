@@ -1,5 +1,7 @@
 export function FinishedProjectsSection() {
   const images = [
+    { src: "/images/wc5.jpeg", alt: "Lavabo terminado" },
+    { src: "/images/wc4.jpeg", alt: "Lavabo terminado" },
     { src: "/images/wc1.jpeg", alt: "Lavabo terminado" },
     { src: "/images/wc2.jpeg", alt: "Lavabo terminado" },
     { src: "/images/wc3.jpeg", alt: "Lavabo terminado" },
