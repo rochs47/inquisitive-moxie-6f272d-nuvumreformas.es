@@ -1,7 +1,6 @@
 export function FinishedProjectsSection() {
   const images = [
-    { src: "/images/cocina-1.jpg", alt: "reforma acabada" },
-    // Añade aquí todas tus fotos de proyectos terminados
+    { src: "/images/cocina-1.jpg", alt: "Cocina terminada" },
   ];
 
   return (
