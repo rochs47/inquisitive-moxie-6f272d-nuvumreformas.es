@@ -1,6 +1,6 @@
 export function FinishedProjectsSection() {
   const images = [
-    { src: "/images/cocina-1.jpg", alt: "Cocina terminada" },
+    { src: "public/images/cocina-1.jpg", alt: "Cocina terminada" },
   ];
 
   return (
