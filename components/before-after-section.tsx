@@ -1,7 +1,6 @@
 export function FinishedProjectsSection() {
-  const images = [
-    { src: "/images/cocina-1.jpg", alt: "Cocina acabada" },
-  ];
+  const images = []; // Lista vacía
+   
 
   return (
     <section className="py-12 px-4">
