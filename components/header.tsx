@@ -14,14 +14,13 @@ export function Header() {
     { label: t.nav.about, href: "#nosotros" },
     { label: t.nav.method, href: "#metodo" },
     { label: t.nav.services, href: "#servicios" },
-    // projects removed
+    { label: t.nav.projects, href: "#proyectos" }, // <-- AÑADIDO AQUÍ
   ]
   const [open, setOpen] = useState(false)
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md shadow-sm border-b">
       <div className="container mx-auto px-6 lg:px-8 flex items-center justify-between h-20 relative">
-        {/* Logo eliminado del header */}
         {/* Navegación Desktop */}
         <nav className="hidden lg:flex items-center gap-7">
           {navItems.map((item) => (
@@ -53,6 +52,7 @@ export function Header() {
             <Link href="#contacto">{t.nav.quote}</Link>
           </Button>
         </div>
+
         {/* Mobile panel */}
         {open && (
           <div className="lg:hidden absolute left-0 right-0 top-full bg-background shadow-md z-50">
