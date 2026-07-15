@@ -6,7 +6,7 @@ import { BeforeAfterSection } from "@/components/before-after-section"
 import { AboutSection } from "@/components/about-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
-import { FinishedProjectsSection } from "@/components/FinishedProjectsSection"
+import { FinishedProjectsSection } from "@/components/finished-projects-section"
 
 export default function Home() {
   return (
