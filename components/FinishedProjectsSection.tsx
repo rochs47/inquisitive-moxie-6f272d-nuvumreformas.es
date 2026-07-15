@@ -5,6 +5,9 @@ export function FinishedProjectsSection() {
     { src: "/images/wc1.jpeg", alt: "Lavabo terminado" },
     { src: "/images/wc2.jpeg", alt: "Lavabo terminado" },
     { src: "/images/wc3.jpeg", alt: "Lavabo terminado" },
+    { src: "/images/wc6.jpeg", alt: "Lavabo terminado" },
+    { src: "/images/wc7.jpeg", alt: "Lavabo terminado" },
+    { src: "/images/wc8.jpeg", alt: "Lavabo terminado" },
     { src: "/images/salon.jpeg", alt: "salon terminado" },
     { src: "/images/cocina1.jpeg", alt: "Cocina terminada" },
   ];
