@@ -1,15 +1,11 @@
-export function BeforeAfterSection() {
-  // Aquí es donde añades tus fotos. 
-  // Asegúrate de que la ruta coincida exactamente con la carpeta que creaste en 'public'
+export function FinishedProjectsSection() {
   const images = [
-    { src: "/images//", alt: " " },
-    { src: "/images/", alt: " " },
-    // Añade aquí todas las que quieras
+    { src: "/images/cocina-1.jpg", alt: "Cocina acabada" },
   ];
 
   return (
     <section className="py-12 px-4">
-      <h2 className="text-3xl font-bold mb-8">Antes y Después</h2>
+      <h2 className="text-3xl font-bold mb-8">Proyectos Acabados</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {images.map((img, index) => (
           <img 
