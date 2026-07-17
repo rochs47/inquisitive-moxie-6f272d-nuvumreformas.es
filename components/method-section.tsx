@@ -23,6 +23,7 @@ export function MethodSection() {
             {t.method.subtitle}
           </p>
         </div>
+        
 
         {/* Steps Grid */}
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
