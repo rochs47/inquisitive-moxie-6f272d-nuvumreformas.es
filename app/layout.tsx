@@ -41,7 +41,6 @@ export default function RootLayout({
           <Header /> {/* Al ponerlo aquí, aparecerá en todas las páginas */}
           {children}
         </LanguageProvider>
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
