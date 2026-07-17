@@ -27,7 +27,7 @@ export function OficinaTecnicaSection() {
 
             {/* Features */}
             <div className="mt-10 space-y-6">
-              {t.technicalOffice.features.map((feature, index) => {
+              {t.technicalOffice.features.map((feature: { title: string; description: string }, index: number) => {
                 const Icon = icons[index]
                 return (
                   <div key={feature.title} className="flex gap-4">
