@@ -1,5 +1,5 @@
 export function BeforeAfterSection() {
-  const images = []; // Lista vacía para que no se muestre nada "feo"
+  const images: { src: string; alt: string }[] = []; // Hemos definido el tipo aquí
 
   return (
     <section className="py-12 px-4">
