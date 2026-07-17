@@ -1,3 +1,11 @@
+export type Language = "ca" | "es" | "en"
+
+export const languages: { code: Language; label: string }[] = [
+  { code: "ca", label: "CA" },
+  { code: "es", label: "ES" },
+  { code: "en", label: "EN" },
+]
+
 export const translations = {
   ca: {
     nav: { method: "Mètode", services: "Serveis", technicalOffice: "Oficina Tècnica", gallery: "Abans i Després", about: "Qui Som", contact: "Contacte", quote: "Pressupost" },
