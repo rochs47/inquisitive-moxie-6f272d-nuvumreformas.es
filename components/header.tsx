@@ -14,7 +14,7 @@ export function Header() {
     { label: t.nav.about, href: "#nosotros" },
     { label: t.nav.method, href: "#metodo" },
     { label: t.nav.services, href: "#servicios" },
-    { label: t.nav.projects, href: "#proyectos" }, // <-- AÑADIDO AQUÍ
+    // { label: t.nav.projects, href: "#proyectos" }, // Comentado para evitar error de compilación
   ]
   const [open, setOpen] = useState(false)
 
