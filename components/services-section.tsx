@@ -6,7 +6,7 @@ import { useLanguage } from "@/lib/i18n/language-context"
 import { cn } from "@/lib/utils"
 
 // Asegúrate de que este orden sea el mismo que quieres en la web
-const servicesData = [
+const _servicesData = [
   { 
     title: "Electricidad", 
     description: "Instalaciones eléctricas completas y certificadas.", 
@@ -74,7 +74,7 @@ export function ServicesSection() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {t.services.items.map((service, index) => (
+          {t.services.items.map((service, _index) => (
             <div
               key={service.title}
               className={cn(

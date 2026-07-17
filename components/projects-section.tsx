@@ -1,11 +1,11 @@
 "use client"
 
-import Link from "next/link"
-import { ArrowRight, Home } from "lucide-react"
+
+import {} from "lucide-react"
 import { useLanguage } from "@/lib/i18n/language-context"
 
 export function ProjectsSection() {
-  const { t } = useLanguage()
+ const { t: _t } = useLanguage()
 
   return (
     <>
