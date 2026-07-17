@@ -16,7 +16,7 @@ const features = [
     icon: HardHat,
     title: "Supervisión",
     description: "Encargado de obra propio para tu tranquilidad.",
-    image: "/images/detail-window.jpg",
+    image: "/images/detail-globalThis.jpg",
   },
   {
     icon: Sparkles,
