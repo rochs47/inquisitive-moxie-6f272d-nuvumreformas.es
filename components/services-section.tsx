@@ -74,7 +74,7 @@ export function ServicesSection() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {t.services.items.map((service, _index) => (
+          {t.services.items.map((service: { title: string; description: string; image: string }, _index: number) => (
             <div
               key={service.title}
               className={cn(
