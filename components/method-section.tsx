@@ -26,7 +26,7 @@ export function MethodSection() {
 
         {/* Steps Grid */}
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-          {t.method.steps.map((step, index) => {
+          {t.method.steps.map((step: { title: string; description: string }, index: number) => {
             const Icon = icons[index]
             return (
               <div key={step.title} className="relative group">
