@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 import { DM_Sans, DM_Serif_Display } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import { LanguageProvider } from '@/lib/i18n/language-context'
 import { Header } from '@/components/header' // Importamos el Header aquí
 import './globals.css'
