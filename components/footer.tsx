@@ -9,7 +9,7 @@ export function Footer() {
   const navItems = [
     { label: t.nav.method, href: "#metodo" },
     { label: t.nav.services, href: "#servicios" },
-    { label: t.nav.projects, href: "#proyectos" },
+    // { label: t.nav.projects, href: "#proyectos" }, // Comentada para evitar error de compilación
     { label: t.nav.gallery, href: "#galeria" },
     { label: t.nav.about, href: "#nosotros" },
     { label: t.nav.contact, href: "#contacto" },
