@@ -19,14 +19,14 @@ export function AboutSection() {
         </div>
 
         <div className="max-w-3xl mx-auto space-y-5 text-muted-foreground text-lg leading-relaxed">
-          {t.about.paragraphs.map((paragraph, index) => (
+          {t.about.paragraphs.map((paragraph: string, index: number) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>
 
         {/* Highlights */}
         <ul className="mt-12 max-w-3xl mx-auto grid sm:grid-cols-2 gap-x-8 gap-y-4">
-          {t.about.highlights.map((item) => (
+          {t.about.highlights.map((item: string) => (
             <li key={item} className="flex items-center gap-3">
               <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
               <span className="text-foreground">{item}</span>
